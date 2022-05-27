@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/adaptive.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <title>Главная</title>
+</head>
+
+<body>
+    <div class="auth-popup">
+            <div class="auth-window">
+                <nav class="auth__nav">
+                    <a class="auth-nav__link auth-nav__link_active">Вход</a>
+                    <span>&nbsp/&nbsp</span>
+                    <a class="auth-nav__link">Регистрация</a>
+                </nav>
+                <form action="" class="auth__form auth__form_active">
+                    <input type="email" class="auth__input" name="email" placeholder="Почта">
+                    <input type="password" class="auth__input" name="password" placeholder="Пароль">
+                    <button class="btn auth__btn" type="submit">Войти</button>
+                </form>
+                <form action="" class="auth__form">
+                    <input type="text" class="auth__input" name="name" placeholder="Имя">
+                    <input type="text" class="auth__input" name="surname" placeholder="Фамилия">
+                    <select name="sex" class="auth__input">
+                        <option value="male">Мужской</option>
+                        <option value="female">Женский</option>
+                    </select>
+                    <input type="tel" class="auth__input" name="phone" placeholder="Телефон">
+                    <input type="email" class="auth__input" name="email" placeholder="Почта">
+                    <input type="password" class="auth__input" name="password" placeholder="Пароль">
+                    <input type="password" class="auth__input" name="repassword" placeholder="Подтвердите пароль">
+                    <button class="btn auth__btn" type="submit">Зарегистрироваться</button>
+                </form>
+            </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="/" class="home-link">
+                    <svg class="logo-black" viewBox="0 0 682 255" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="127.5" cy="127.5" r="127.5" fill="#BE26D7" />
+                        <circle cx="116.737" cy="113.425" r="101.834" fill="#CF2AEA" />
+                        <circle cx="110.942" cy="104.318" r="82.7922" fill="#E22FFF" />
+                        <g filter="url(#filter0_d_10_191)">
+                            <circle cx="99.3505" cy="87.76" r="41.3961" fill="white" />
+                        </g>
+                        <path class="logo-text-hover"
+                            d="M322.399 106.371V122.599H344.19V132.891H322.399V150.046H346.972V160.617H309.418V95.8004H346.972V106.371H322.399Z"
+                            fill="black" />
+                        <path class="logo-text-hover"
+                            d="M378.428 161.451C374.224 161.451 370.453 160.71 367.115 159.226C363.777 157.68 361.119 155.61 359.14 153.013C357.224 150.417 356.173 147.542 355.988 144.39H369.062C369.31 146.368 370.268 148.006 371.937 149.304C373.668 150.602 375.8 151.251 378.335 151.251C380.808 151.251 382.724 150.757 384.084 149.768C385.506 148.779 386.217 147.511 386.217 145.966C386.217 144.297 385.351 143.06 383.62 142.257C381.951 141.391 379.262 140.464 375.553 139.475C371.72 138.548 368.568 137.59 366.095 136.6C363.684 135.611 361.582 134.097 359.79 132.057C358.059 130.017 357.193 127.266 357.193 123.804C357.193 120.96 357.997 118.364 359.604 116.015C361.273 113.666 363.622 111.811 366.651 110.451C369.742 109.091 373.359 108.411 377.5 108.411C383.62 108.411 388.504 109.957 392.151 113.048C395.799 116.077 397.808 120.188 398.179 125.38H385.753C385.568 123.34 384.702 121.733 383.157 120.559C381.673 119.322 379.664 118.704 377.13 118.704C374.78 118.704 372.957 119.137 371.659 120.002C370.422 120.868 369.804 122.073 369.804 123.619C369.804 125.35 370.67 126.679 372.4 127.606C374.131 128.471 376.82 129.368 380.468 130.295C384.177 131.222 387.237 132.18 389.648 133.17C392.059 134.159 394.13 135.704 395.86 137.806C397.653 139.846 398.58 142.566 398.642 145.966C398.642 148.933 397.808 151.591 396.139 153.94C394.531 156.29 392.182 158.144 389.091 159.504C386.062 160.802 382.508 161.451 378.428 161.451Z"
+                            fill="black" />
+                        <path class="logo-text-hover"
+                            d="M428.957 161.451C424.753 161.451 420.982 160.71 417.644 159.226C414.306 157.68 411.648 155.61 409.67 153.013C407.753 150.417 406.702 147.542 406.517 144.39H419.591C419.839 146.368 420.797 148.006 422.466 149.304C424.197 150.602 426.33 151.251 428.864 151.251C431.337 151.251 433.253 150.757 434.613 149.768C436.035 148.779 436.746 147.511 436.746 145.966C436.746 144.297 435.88 143.06 434.15 142.257C432.48 141.391 429.791 140.464 426.082 139.475C422.25 138.548 419.097 137.59 416.624 136.6C414.213 135.611 412.111 134.097 410.319 132.057C408.588 130.017 407.722 127.266 407.722 123.804C407.722 120.96 408.526 118.364 410.133 116.015C411.802 113.666 414.151 111.811 417.18 110.451C420.271 109.091 423.888 108.411 428.03 108.411C434.15 108.411 439.033 109.957 442.68 113.048C446.328 116.077 448.337 120.188 448.708 125.38H436.282C436.097 123.34 435.231 121.733 433.686 120.559C432.202 119.322 430.193 118.704 427.659 118.704C425.31 118.704 423.486 119.137 422.188 120.002C420.951 120.868 420.333 122.073 420.333 123.619C420.333 125.35 421.199 126.679 422.93 127.606C424.66 128.471 427.35 129.368 430.997 130.295C434.706 131.222 437.766 132.18 440.177 133.17C442.588 134.159 444.659 135.704 446.39 137.806C448.182 139.846 449.11 142.566 449.171 145.966C449.171 148.933 448.337 151.591 446.668 153.94C445.06 156.29 442.711 158.144 439.62 159.504C436.591 160.802 433.037 161.451 428.957 161.451Z"
+                            fill="black" />
+                        <path class="logo-text-hover"
+                            d="M507.582 133.819C507.582 135.673 507.459 137.342 507.211 138.826H469.657C469.966 142.535 471.264 145.44 473.551 147.542C475.839 149.644 478.651 150.695 481.99 150.695C486.811 150.695 490.242 148.624 492.282 144.482H506.284C504.801 149.428 501.957 153.508 497.753 156.722C493.55 159.875 488.388 161.451 482.268 161.451C477.322 161.451 472.871 160.37 468.915 158.206C465.021 155.98 461.961 152.859 459.735 148.84C457.571 144.822 456.49 140.186 456.49 134.931C456.49 129.615 457.571 124.948 459.735 120.93C461.899 116.911 464.928 113.82 468.822 111.657C472.717 109.493 477.199 108.411 482.268 108.411C487.151 108.411 491.51 109.462 495.342 111.564C499.237 113.666 502.235 116.664 504.337 120.559C506.501 124.391 507.582 128.811 507.582 133.819ZM494.137 130.11C494.075 126.771 492.87 124.113 490.521 122.135C488.171 120.095 485.297 119.075 481.897 119.075C478.682 119.075 475.962 120.064 473.737 122.042C471.573 123.959 470.244 126.648 469.75 130.11H494.137Z"
+                            fill="black" />
+                        <path class="logo-text-hover"
+                            d="M545.525 108.504C551.645 108.504 556.591 110.451 560.362 114.346C564.132 118.179 566.018 123.557 566.018 130.48V160.617H553.036V132.242C553.036 128.162 552.016 125.04 549.976 122.877C547.936 120.651 545.154 119.539 541.631 119.539C538.045 119.539 535.202 120.651 533.1 122.877C531.06 125.04 530.04 128.162 530.04 132.242V160.617H517.058V109.246H530.04V115.644C531.771 113.419 533.965 111.688 536.623 110.451C539.343 109.153 542.311 108.504 545.525 108.504Z"
+                            fill="black" />
+                        <path class="logo-text-hover"
+                            d="M575.025 134.931C575.025 129.615 576.107 124.979 578.27 121.022C580.434 117.004 583.432 113.913 587.265 111.75C591.098 109.524 595.487 108.411 600.432 108.411C606.799 108.411 612.054 110.019 616.196 113.233C620.399 116.386 623.212 120.837 624.634 126.586H610.632C609.89 124.36 608.623 122.63 606.83 121.393C605.099 120.095 602.936 119.446 600.339 119.446C596.63 119.446 593.694 120.806 591.53 123.526C589.367 126.184 588.285 129.986 588.285 134.931C588.285 139.815 589.367 143.617 591.53 146.337C593.694 148.995 596.63 150.324 600.339 150.324C605.594 150.324 609.025 147.975 610.632 143.277H624.634C623.212 148.84 620.399 153.26 616.196 156.537C611.992 159.813 606.737 161.451 600.432 161.451C595.487 161.451 591.098 160.37 587.265 158.206C583.432 155.98 580.434 152.89 578.27 148.933C576.107 144.915 575.025 140.248 575.025 134.931Z"
+                            fill="black" />
+                        <path class="logo-text-hover"
+                            d="M681.899 133.819C681.899 135.673 681.775 137.342 681.528 138.826H643.973C644.282 142.535 645.581 145.44 647.868 147.542C650.155 149.644 652.968 150.695 656.306 150.695C661.128 150.695 664.559 148.624 666.599 144.482H680.601C679.117 149.428 676.273 153.508 672.07 156.722C667.866 159.875 662.704 161.451 656.584 161.451C651.639 161.451 647.188 160.37 643.231 158.206C639.337 155.98 636.277 152.859 634.051 148.84C631.888 144.822 630.806 140.186 630.806 134.931C630.806 129.615 631.888 124.948 634.051 120.93C636.215 116.911 639.244 113.82 643.139 111.657C647.033 109.493 651.515 108.411 656.584 108.411C661.468 108.411 665.826 109.462 669.659 111.564C673.553 113.666 676.551 116.664 678.653 120.559C680.817 124.391 681.899 128.811 681.899 133.819ZM668.453 130.11C668.391 126.771 667.186 124.113 664.837 122.135C662.488 120.095 659.613 119.075 656.213 119.075C652.999 119.075 650.279 120.064 648.053 122.042C645.89 123.959 644.561 126.648 644.066 130.11H668.453Z"
+                            fill="black" />
+                        <defs>
+                            <filter id="filter0_d_10_191" x="41.9544" y="30.3639" width="114.792" height="114.792"
+                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feOffset />
+                                <feGaussianBlur stdDeviation="8" />
+                                <feComposite in2="hardAlpha" operator="out" />
+                                <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_10_191" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_10_191"
+                                    result="shape" />
+                            </filter>
+                        </defs>
+                    </svg>
+                </a>
+                <div class="header__burger">
+                    <div class="burger-icon">
+                        <span></span>
+                    </div>
+                    <div class="burger-content">
+                        <nav class="header-nav">
+                            <h1 class="burger-content__title">Навигация</h1>
+                            <a href="" class="header-nav__link">Хиты продаж</a>
+                            <a href="" class="header-nav__link">Категории</a>
+                            <a href="" class="header-nav__link">Новинка</a>
+                            <a href="" class="header-nav__link">Скидки</a>
+                            <a class="header-nav__link auth-open">Вход/Регистрация</a>
+                        </nav>
+                        <div class="profile">
+<!--                            <div class="profile__top">-->
+<!--                                <p class="profile__name">Иван</p>-->
+<!--                                <div class="profile__media">-->
+<!--                                    <img src="assets/img/avatar.jpg" alt="" class="profile__ava">-->
+<!--                                </div>-->
+<!--                                <svg class="drop-down-icon" width="15" height="9" viewBox="0 0 20 12" fill="none"-->
+<!--                                    xmlns="http://www.w3.org/2000/svg">-->
+<!--                                    <path fill-rule="evenodd" clip-rule="evenodd"-->
+<!--                                        d="M1.67489 0.298319C1.29173 -0.0994396 0.670519 -0.0994396 0.287365 0.298319C-0.0957884 0.696077 -0.0957884 1.34097 0.287365 1.73873L9.11699 10.9049C9.357 11.1541 9.69041 11.2472 10.0002 11.1842C10.31 11.2472 10.6434 11.1541 10.8834 10.9049L19.7131 1.73873C20.0962 1.34097 20.0962 0.696077 19.7131 0.298319C19.3299 -0.0994396 18.7087 -0.0994396 18.3256 0.298319L10.0002 8.941L1.67489 0.298319Z"-->
+<!--                                        fill="#A3A3A3" />-->
+<!--                                </svg>-->
+<!--                            </div>-->
+                            <div class="profile__bot">
+                                <h1 class="burger-content__title">Аккаунт</h1>
+<!--                                <nav class="profile-nav">-->
+<!--                                    <a href="" class="profile-nav__item">Настройки</a>-->
+<!--                                    <a class="profile-nav__item">Темная тема</a>-->
+<!--                                </nav>-->
+<!--                                <hr>-->
+<!--                                <a href="" class="profile-nav__item logout">Выйти</a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section-slider">
+            <div class="container">
+                <div class="slider__inner">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-slide__media">
+                                    <img src="assets/img/slides/slide1.jpg" alt="" class="swiper-slide__pict">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide__media">
+                                    <img src="assets/img/slides/slide1.jpg" alt="" class="swiper-slide__pict">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-slide__media">
+                                    <img src="assets/img/slides/slide1.jpg" alt="" class="swiper-slide__pict">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-hits">
+            <div class="container">
+                <div class="section__inner hits__inner">
+                    <h1 class="title">Хиты продаж🔥</h1>
+                    <div class="wears">
+                        <div class="wear">
+                            <div class="wear__cover">
+                                <img src="assets/img/wears/tshirt-essence.jpg" alt="" class="wear__pict">
+                            </div>
+                            <h2 class="wear__name">Футболка Essence</h2>
+                            <div class="wear__prices">
+                                <div class="wear__price"><span class="price_color">799</span> RUB</div>
+                            </div>
+                        </div>
+                        <div class="wear">
+                            <div class="wear__cover">
+                                <img src="assets/img/wears/tshirt-essence.jpg" alt="" class="wear__pict">
+                            </div>
+                            <h2 class="wear__name">Футболка Essence</h2>
+                            <div class="wear__prices">
+                                <div class="wear__price"><span class="price_color">799</span> RUB</div>
+                            </div>
+                        </div>
+                        <div class="wear">
+                            <div class="wear__cover">
+                                <img src="assets/img/wears/tshirt-essence.jpg" alt="" class="wear__pict">
+                            </div>
+                            <h2 class="wear__name">Футболка Essence</h2>
+                            <div class="wear__prices">
+                                <div class="wear__price"><span class="price_color">799</span> RUB</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-category">
+            <div class="container">
+                <div class="section__inner category__inner">
+                    <h1 class="title light-title">Категории</h1>
+                    <div class="categories">
+                        <div class="category">
+                            <svg class="category__icon" width="290" height="290" viewBox="0 0 290 290" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M160 100C160 108.284 153.284 115 145 115C136.716 115 130 108.284 130 100C130 91.7157 136.716 85 145 85C153.284 85 160 91.7157 160 100ZM163.583 116.723C167.572 112.294 170 106.43 170 100C170 86.1929 158.807 75 145 75C131.193 75 120 86.1929 120 100C120 106.43 122.428 112.294 126.417 116.723C83.2683 124.832 49.8966 160.655 45.4938 205C45.1672 208.289 45 211.625 45 215H55H235H245C245 211.625 244.833 208.289 244.506 205C240.103 160.655 206.732 124.832 163.583 116.723ZM145 125C98.6745 125 60.5237 160 55.5493 205H234.451C229.476 160 191.326 125 145 125Z" fill="#E22FFF"/>
+                            </svg>
+
+                        </div>
+                        <div class="category">
+                            <svg class="category__icon" width="290" height="290" viewBox="0 0 290 290" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M87.1426 30C86.2566 30 85.3864 30.2355 84.6213 30.6823L7.47867 75.73C6.31185 76.4113 5.47047 77.5359 5.14617 78.8476C4.82187 80.1593 5.04225 81.5464 5.75713 82.693L39.0687 136.122C40.4352 138.313 43.2462 139.104 45.5546 137.945L82.1426 119.58V255C82.1426 257.762 84.3812 260 87.1426 260H145H202.856C205.618 260 207.856 257.762 207.856 255V119.58L244.445 137.945C246.753 139.104 249.564 138.313 250.93 136.122L284.242 82.693C284.957 81.5464 285.177 80.1593 284.853 78.8476C284.529 77.5359 283.687 76.4113 282.52 75.73L205.378 30.6823C204.613 30.2355 203.743 30 202.856 30H145H87.1426ZM145 40H88.4956L16.966 81.7699L45.1427 126.963L84.8997 107.008C86.4496 106.23 88.292 106.31 89.768 107.221C91.2439 108.132 92.1426 109.742 92.1426 111.476V250H145H197.856V111.476C197.856 109.742 198.755 108.132 200.231 107.221C201.707 106.31 203.549 106.23 205.099 107.008L244.856 126.963L273.033 81.7699L201.503 40H145Z" fill="#E22FFF"/>
+                            </svg>
+
+                        </div>
+                        <div class="category">
+                            <svg class="category__icon" width="290" height="290" viewBox="0 0 290 290" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M145.002 25H230.004C232.766 25 235.004 27.2386 235.004 30V260C235.004 262.761 232.766 265 230.004 265H145.002H60C57.2386 265 55 262.761 55 260V30C55 27.2386 57.2386 25 60 25H145.002ZM140.002 255V94.0983C140.002 91.3369 142.241 89.0983 145.002 89.0983C147.764 89.0983 150.002 91.3369 150.002 94.0983V255H225.004V35H145.002H65V255H140.002Z" fill="#E22FFF"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-new">
+            <div class="container">
+                <div class="section__inner new__inner">
+                    <h1 class="title">Новинка</h1>
+                    <div class="wears">
+                        <div class="wear">
+                            <div class="wear__cover">
+                                <img src="assets/img/wears/tshirt-essence.jpg" alt="" class="wear__pict">
+                            </div>
+                            <h2 class="wear__name">Футболка Essence</h2>
+                            <div class="wear__prices">
+                                <div class="wear__price"><span class="price_color">7599</span> RUB</div>
+                            </div>
+                        </div>
+                        <div class="wear">
+                            <div class="wear__cover">
+                                <img src="assets/img/wears/tshirt-essence.jpg" alt="" class="wear__pict">
+                                <div class="wear__discount">-25%</div>
+                            </div>
+                            <h2 class="wear__name">Футболка Essence</h2>
+                            <div class="wear__prices">
+                                <div class="wear__price"><span class="price_color">599</span> RUB</div>
+                                <div class="wear__old-price"><span class="old-price__weight">799</span> RUB</div>
+                            </div>
+                        </div>
+                        <div class="wear">
+                            <div class="wear__cover">
+                                <img src="assets/img/wears/tshirt-essence.jpg" alt="" class="wear__pict">
+                            </div>
+                            <h2 class="wear__name">Футболка Essence</h2>
+                            <div class="wear__prices">
+                                <div class="wear__price"><span class="price_color">799</span> RUB</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-discount">
+            <div class="container">
+                <div class="section__inner discount__inner">
+                    <h1 class="title">Скидки</h1>
+                    <div class="wears">
+                        <div class="wear">
+                            <div class="wear__cover">
+                                <img src="assets/img/wears/tshirt-essence.jpg" alt="" class="wear__pict">
+                                <div class="wear__discount">-25%</div>
+                            </div>
+                            <h2 class="wear__name">Футболка Essence</h2>
+                            <div class="wear__prices">
+                                <div class="wear__price"><span class="price_color">599</span> RUB</div>
+                                <div class="wear__old-price"><span class="old-price__weight">799</span> RUB</div>
+                            </div>
+                        </div>
+                        <div class="wear">
+                            <div class="wear__cover">
+                                <img src="assets/img/wears/tshirt-essence.jpg" alt="" class="wear__pict">
+                                <div class="wear__discount">-25%</div>
+                            </div>
+                            <h2 class="wear__name">Футболка Essence</h2>
+                            <div class="wear__prices">
+                                <div class="wear__price"><span class="price_color">599</span> RUB</div>
+                                <div class="wear__old-price"><span class="old-price__weight">799</span> RUB</div>
+                            </div>
+                        </div>
+                        <div class="wear">
+                            <div class="wear__cover">
+                                <img src="assets/img/wears/tshirt-essence.jpg" alt="" class="wear__pict">
+                                <div class="wear__discount">-25%</div>
+                            </div>
+                            <h2 class="wear__name">Футболка Essence</h2>
+                            <div class="wear__prices">
+                                <div class="wear__price"><span class="price_color">599</span> RUB</div>
+                                <div class="wear__old-price"><span class="old-price__weight">799</span> RUB</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer-column">
+                    <a href="" class="home-link">
+                        <svg class="" width="200" viewBox="0 0 682 255" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="127.5" cy="127.5" r="127.5" fill="#BE26D7" />
+                            <circle cx="116.737" cy="113.425" r="101.835" fill="#CF2AEA" />
+                            <circle cx="110.942" cy="104.318" r="82.7924" fill="#E22FFF" />
+                            <g filter="url(#filter0_d_10_216)">
+                                <circle cx="99.3506" cy="87.7591" r="41.3962" fill="white" />
+                            </g>
+                            <path class="logo-text-hover"
+                                d="M322.4 106.372V122.599H344.191V132.892H322.4V150.047H346.973V160.618H309.418V95.801H346.973V106.372H322.4Z"
+                                fill="white" />
+                            <path class="logo-text-hover"
+                                d="M378.429 161.452C374.225 161.452 370.454 160.71 367.116 159.227C363.778 157.681 361.119 155.61 359.141 153.014C357.225 150.417 356.174 147.543 355.989 144.39H369.063C369.31 146.368 370.269 148.007 371.938 149.305C373.669 150.603 375.801 151.252 378.336 151.252C380.809 151.252 382.725 150.757 384.085 149.768C385.507 148.779 386.218 147.512 386.218 145.967C386.218 144.297 385.352 143.061 383.621 142.257C381.952 141.392 379.263 140.465 375.554 139.476C371.721 138.548 368.569 137.59 366.096 136.601C363.685 135.612 361.583 134.097 359.79 132.057C358.059 130.017 357.194 127.267 357.194 123.805C357.194 120.961 357.998 118.365 359.605 116.016C361.274 113.667 363.623 111.812 366.652 110.452C369.743 109.092 373.359 108.412 377.501 108.412C383.621 108.412 388.505 109.957 392.152 113.048C395.799 116.077 397.809 120.188 398.18 125.381H385.754C385.569 123.341 384.703 121.734 383.158 120.559C381.674 119.323 379.665 118.705 377.13 118.705C374.781 118.705 372.958 119.137 371.659 120.003C370.423 120.868 369.805 122.074 369.805 123.619C369.805 125.35 370.67 126.679 372.401 127.607C374.132 128.472 376.821 129.368 380.469 130.296C384.178 131.223 387.238 132.181 389.649 133.17C392.059 134.159 394.13 135.705 395.861 137.807C397.654 139.847 398.581 142.567 398.643 145.967C398.643 148.934 397.809 151.592 396.14 153.941C394.532 156.29 392.183 158.145 389.092 159.505C386.063 160.803 382.509 161.452 378.429 161.452Z"
+                                fill="white" />
+                            <path class="logo-text-hover"
+                                d="M428.958 161.452C424.754 161.452 420.983 160.71 417.645 159.227C414.307 157.681 411.649 155.61 409.67 153.014C407.754 150.417 406.703 147.543 406.518 144.39H419.592C419.84 146.368 420.798 148.007 422.467 149.305C424.198 150.603 426.33 151.252 428.865 151.252C431.338 151.252 433.254 150.757 434.614 149.768C436.036 148.779 436.747 147.512 436.747 145.967C436.747 144.297 435.881 143.061 434.151 142.257C432.481 141.392 429.792 140.465 426.083 139.476C422.25 138.548 419.098 137.59 416.625 136.601C414.214 135.612 412.112 134.097 410.32 132.057C408.589 130.017 407.723 127.267 407.723 123.805C407.723 120.961 408.527 118.365 410.134 116.016C411.803 113.667 414.152 111.812 417.181 110.452C420.272 109.092 423.889 108.412 428.031 108.412C434.151 108.412 439.034 109.957 442.681 113.048C446.329 116.077 448.338 120.188 448.709 125.381H436.283C436.098 123.341 435.232 121.734 433.687 120.559C432.203 119.323 430.194 118.705 427.66 118.705C425.31 118.705 423.487 119.137 422.189 120.003C420.952 120.868 420.334 122.074 420.334 123.619C420.334 125.35 421.2 126.679 422.93 127.607C424.661 128.472 427.35 129.368 430.998 130.296C434.707 131.223 437.767 132.181 440.178 133.17C442.589 134.159 444.66 135.705 446.391 137.807C448.183 139.847 449.111 142.567 449.172 145.967C449.172 148.934 448.338 151.592 446.669 153.941C445.061 156.29 442.712 158.145 439.621 159.505C436.592 160.803 433.038 161.452 428.958 161.452Z"
+                                fill="white" />
+                            <path class="logo-text-hover"
+                                d="M507.583 133.819C507.583 135.674 507.46 137.343 507.212 138.827H469.658C469.967 142.536 471.265 145.441 473.552 147.543C475.84 149.645 478.652 150.696 481.991 150.696C486.812 150.696 490.243 148.625 492.283 144.483H506.285C504.802 149.428 501.958 153.508 497.754 156.723C493.551 159.876 488.389 161.452 482.269 161.452C477.323 161.452 472.872 160.37 468.916 158.207C465.021 155.981 461.962 152.859 459.736 148.841C457.572 144.823 456.491 140.187 456.491 134.932C456.491 129.616 457.572 124.948 459.736 120.93C461.9 116.912 464.929 113.821 468.823 111.657C472.718 109.494 477.2 108.412 482.269 108.412C487.152 108.412 491.511 109.463 495.343 111.565C499.238 113.667 502.236 116.665 504.338 120.559C506.502 124.392 507.583 128.812 507.583 133.819ZM494.138 130.11C494.076 126.772 492.871 124.114 490.522 122.136C488.172 120.096 485.298 119.076 481.898 119.076C478.683 119.076 475.963 120.065 473.738 122.043C471.574 123.959 470.245 126.648 469.751 130.11H494.138Z"
+                                fill="white" />
+                            <path class="logo-text-hover"
+                                d="M545.526 108.505C551.646 108.505 556.592 110.452 560.363 114.347C564.134 118.179 566.019 123.557 566.019 130.481V160.618H553.037V132.243C553.037 128.163 552.017 125.041 549.977 122.877C547.937 120.652 545.155 119.539 541.632 119.539C538.046 119.539 535.203 120.652 533.101 122.877C531.061 125.041 530.041 128.163 530.041 132.243V160.618H517.059V109.247H530.041V115.645C531.772 113.419 533.966 111.688 536.624 110.452C539.344 109.154 542.312 108.505 545.526 108.505Z"
+                                fill="white" />
+                            <path class="logo-text-hover"
+                                d="M575.026 134.932C575.026 129.616 576.108 124.979 578.271 121.023C580.435 117.005 583.433 113.914 587.266 111.75C591.099 109.525 595.488 108.412 600.433 108.412C606.801 108.412 612.055 110.019 616.197 113.234C620.401 116.387 623.213 120.837 624.635 126.587H610.633C609.891 124.361 608.624 122.63 606.831 121.394C605.101 120.096 602.937 119.447 600.341 119.447C596.631 119.447 593.695 120.807 591.531 123.527C589.368 126.185 588.286 129.987 588.286 134.932C588.286 139.816 589.368 143.617 591.531 146.337C593.695 148.996 596.631 150.325 600.341 150.325C605.595 150.325 609.026 147.976 610.633 143.277H624.635C623.213 148.841 620.401 153.261 616.197 156.538C611.993 159.814 606.739 161.452 600.433 161.452C595.488 161.452 591.099 160.37 587.266 158.207C583.433 155.981 580.435 152.89 578.271 148.934C576.108 144.916 575.026 140.248 575.026 134.932Z"
+                                fill="white" />
+                            <path class="logo-text-hover"
+                                d="M681.9 133.819C681.9 135.674 681.776 137.343 681.529 138.827H643.975C644.284 142.536 645.582 145.441 647.869 147.543C650.156 149.645 652.969 150.696 656.307 150.696C661.129 150.696 664.56 148.625 666.6 144.483H680.602C679.118 149.428 676.275 153.508 672.071 156.723C667.867 159.876 662.706 161.452 656.586 161.452C651.64 161.452 647.189 160.37 643.233 158.207C639.338 155.981 636.278 152.859 634.053 148.841C631.889 144.823 630.807 140.187 630.807 134.932C630.807 129.616 631.889 124.948 634.053 120.93C636.216 116.912 639.246 113.821 643.14 111.657C647.035 109.494 651.516 108.412 656.586 108.412C661.469 108.412 665.827 109.463 669.66 111.565C673.555 113.667 676.553 116.665 678.655 120.559C680.818 124.392 681.9 128.812 681.9 133.819ZM668.455 130.11C668.393 126.772 667.187 124.114 664.838 122.136C662.489 120.096 659.615 119.076 656.215 119.076C653 119.076 650.28 120.065 648.055 122.043C645.891 123.959 644.562 126.648 644.067 130.11H668.455Z"
+                                fill="white" />
+                            <defs>
+                                <filter id="filter0_d_10_216" x="41.9545" y="30.3629" width="114.792" height="114.792"
+                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feColorMatrix in="SourceAlpha" type="matrix"
+                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                    <feOffset />
+                                    <feGaussianBlur stdDeviation="8" />
+                                    <feComposite in2="hardAlpha" operator="out" />
+                                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+                                    <feBlend mode="normal" in2="BackgroundImageFix"
+                                        result="effect1_dropShadow_10_216" />
+                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_10_216"
+                                        result="shape" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer-column">
+                    <h2 class="footer-column__title">Контакты</h2>
+                    <div class="footer__links">
+                        <a class="footer__link">+7 (999) 888-77-66</a>
+                        <a class="footer__link">essenceshop@essence.com</a>
+                        <a href="https://web.telegram.org" target="_blank" class="footer__link">@essenceshop</a>
+                        <a href="https://vk.com" target="_blank" class="footer__link">vkesseshop</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h2 class="footer-column__title">Адрес</h2>
+                    <div class="footer__links">
+                        <a class="footer__link">г. Москва, ул. Александрова 473/39</a>
+                        <a class="footer__link">г. Санкт-Петербург, ул. Вахитова 432</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h2 class="footer-column__title">О компании</h2>
+                    <div class="footer__links">
+                        <a class="footer__link">Пользовательское соглашение</a>
+                        <a class="footer__link">Сотрудничество</a>
+                        <a class="footer__link">Блог</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

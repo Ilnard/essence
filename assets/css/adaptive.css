@@ -1,0 +1,127 @@
+@media screen and (max-width: 1289px) {
+    .wear {
+        margin-right: 0;
+    }
+    .wear:nth-child(odd) {
+        margin-right: 25px;
+        margin-bottom: 25px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .settings__inner {
+        flex-direction: column;
+    }
+    .settings__about, .settings__repass {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 970px) {
+    .footer__inner {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .burger-icon {
+        display: block;
+    }
+    .burger-content {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100vw;
+        height: 100vh;
+        background: white;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        z-index: 99;
+    }
+    .burger-content_active {
+        display: flex;
+    }
+    .header-nav {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        margin-right: 0;
+    }
+    .burger-content__title {
+        display: block;
+        font-size: 36px;
+        padding: 30px 0;
+    }
+    .header-nav__link {
+        margin-right: 0;
+        font-size: 22px;
+        margin-bottom: 20px
+    }
+    .header-nav__link:last-child {
+        margin-bottom: 0;
+    }
+    .profile__top {
+        display: none;
+    }
+    .profile__bot {
+        max-height: none;
+        align-items: center;
+        border: none;
+    }
+    .profile-nav {
+        align-items: center;
+        margin-bottom: 0;
+    }
+    .profile-nav__item {
+        font-size: 22px;
+        margin-bottom: 20px
+    }
+    hr {
+        display: none;
+    }
+}
+@media screen and (max-width: 879px) {
+    .wear:nth-child(odd) {
+        margin-right: 0;
+    }
+    .wear {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 36px;
+    }
+    .footer__inner {
+        grid-template-columns: 1fr;
+    }
+    .footer-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__link {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 426px) {
+    .categories {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .category {
+        margin-bottom: 10px;
+        width: 200px;
+        height: 200px;
+    }
+    .category:last-child {
+        margin-bottom: 0;
+    }
+    .auth__nav {
+        font-size: 26px;
+    }
+    .auth-window {
+        overflow-y: scroll;
+    }
+}
