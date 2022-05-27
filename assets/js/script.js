@@ -40,22 +40,60 @@ document.addEventListener('DOMContentLoaded', () => {
         const burgerBtn = document.querySelector('.burger-icon')
         const burgerMenu = document.querySelector('.burger-content')
         const body = document.querySelector('body')
-        const authBtn = document.querySelector('.auth-open')
+        const authOpenBtn = document.querySelector('.auth-open')
         const authPopup = document.querySelector('.auth-popup')
+        const authCloseBtn = document.querySelector('.close-icon')
+        let openMenu = false
+        let openAuth = false
 
-        function openCloseBurgerMenu() {
-            burgerBtn.classList.toggle('burger-icon_active')
-            burgerMenu.classList.toggle('burger-content_active')
+        function openBurgerMenu(openMenuProp) {
+            if (!openMenuProp) {
+                burgerBtn.classList.add('burger-icon_active')
+                burgerMenu.classList.add('burger-content_active')
+                body.classList.add('no-scroll')
+                openMenuProp = !openMenuProp
+            }
+            return openMenuProp
+        }
+        function closeBurgerMenu(openMenuProp, openAuthProp) {
+            if (openMenuProp) {
+                burgerBtn.classList.remove('burger-icon_active')
+                burgerMenu.classList.remove('burger-content_active')
+                if (!openAuthProp) body.classList.remove('no-scroll')
+                openMenuProp = !openMenuProp
+            }
+            return openMenuProp
+        }
+        function openAuthMenu(openAuthProp) {
+            if (!openAuthProp) {
+                authPopup.classList.add('auth-popup_active')
+                body.classList.add('no-scroll')
+                openAuthProp = !openAuthProp
+            }
+            return openAuthProp
+        }
+        function closeAuthMenu(openAuthProp) {
+            if (openAuthProp) {
+                authPopup.classList.remove('auth-popup_active')
+                body.classList.remove('no-scroll')
+            }
         }
 
         burgerBtn.addEventListener('click', () => {
-            openCloseBurgerMenu()
-            body.classList.toggle('no-scroll')
+            openBurgerMenu(openMenu)
+            closeBurgerMenu(openMenu, openAuth)
+            openMenu = !openMenu
+
         })
-        authBtn.addEventListener('click', () => {
-            authPopup.classList.toggle('auth-popup_active')
-            openCloseBurgerMenu()
+        authOpenBtn.addEventListener('click', () => {
+            openMenu = closeBurgerMenu(openMenu, openAuth)
+            openAuth = openAuthMenu(openAuth)
         })
+        authCloseBtn.addEventListener('click', () => {
+            closeAuthMenu(openAuth)
+            openAuth = !openAuth
+        })
+
     }
     burgerMenuFunc()
     function authNav() {

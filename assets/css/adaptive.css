@@ -14,6 +14,11 @@
     .settings__about, .settings__repass {
         width: 100%;
     }
+    .close-icon {
+        left: auto;
+        top: 30px;
+        right: 30px
+    }
 }
 @media screen and (max-width: 970px) {
     .footer__inner {
@@ -88,6 +93,15 @@
         margin-right: 0;
     }
 }
+@media screen and (max-width: 650px) {
+    .close-icon {
+        width: 30px;
+        height: 30px;
+    }
+    .auth__nav {
+        margin-top: 40px;
+    }
+}
 @media screen and (max-width: 600px) {
     .title {
         font-size: 36px;
@@ -104,6 +118,14 @@
         text-align: center;
     }
 }
+@media screen and (max-width: 450px) {
+    .auth__nav {
+        font-size: 26px;
+    }
+    .auth-window {
+        overflow-y: scroll;
+    }
+}
 @media screen and (max-width: 426px) {
     .categories {
         flex-direction: column;
@@ -118,10 +140,9 @@
     .category:last-child {
         margin-bottom: 0;
     }
+}
+@media screen and (max-width: 376px) {
     .auth__nav {
-        font-size: 26px;
-    }
-    .auth-window {
-        overflow-y: scroll;
+        font-size: 22px;
     }
 }
